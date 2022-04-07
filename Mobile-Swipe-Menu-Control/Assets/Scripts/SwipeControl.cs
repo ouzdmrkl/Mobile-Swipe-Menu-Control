@@ -18,8 +18,8 @@ public class SwipeControl : MonoBehaviour
 
             if (touch.phase == TouchPhase.Moved)
             {
-                // deltaPosition works like, when you touch the screen, your touch point is origin.
-                // For an example, if you go up after first touch, deltaPosition.y is bigger than zero
+                // deltaPosition works like, when you touch the screen, your touch point is origin (0,0).
+                // For an example, if you go up after first touch, deltaPosition.y is bigger than zero (0,1)
                 if (touch.deltaPosition.y > 0.1f && can_Swipe)
                 {
                     SwipeUp(); // Lets call our SwipeUp() method
